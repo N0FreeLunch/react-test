@@ -9,5 +9,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();
 
-// 현재 버전의 리액트에는 serviceWorker가 존재하지 않는다. 
-// 커스텀으로 추가함
+// reference
+// https://create-react-app.dev/docs/making-a-progressive-web-app/#offline-first-considerations
