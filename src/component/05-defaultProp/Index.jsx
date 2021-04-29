@@ -1,7 +1,7 @@
 import React from 'react';
-import DefaultPropsComponent from './component/DefaultPropsComponent';
+import DefaultPropsComponent from './DefaultPropsComponent';
 
-class App extends React.Component {
+class Index extends React.Component {
   render() {
     return (
       <div>
@@ -11,4 +11,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Index;
