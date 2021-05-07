@@ -2,14 +2,15 @@ import React from 'react';
 
 class StateExample extends React.Component {
   constructor (props) {
-    super(props)
-      this.state = {
-        loading : true,
-        formData : 'no data',
-      };
+    super(props);
+    this.state = {
+      loading : true,
+      formData : 'no data',
+    };
 
-      this.handleData = this.handleData.bind(this);
-      setTimeout(this.handleData, 4000);
+    this.handleData = this.handleData.bind(this);
+    // setTimeout(this.handleData, 4000);
+    setTimeout(this.handleData, 4000);
   }
 
   handleData () {

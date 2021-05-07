@@ -8,6 +8,7 @@ import Component06 from './component/06-transmitJsxToChildComponent/Index';
 import Component07 from './component/07-state/Index';
 import Component08 from './component/08-renderingWithoutState/Index';
 import Component09 from './component/09-counter/Index';
+import Component10 from './component/10-lifecycleExample/Index';
 
 class App extends React.Component {
   render() {
@@ -18,9 +19,10 @@ class App extends React.Component {
     componentArray.push(<Component04/>);
     componentArray.push(<Component05/>);
     componentArray.push(<Component06/>);
-    componentArray.push(<Component07/>);
-    componentArray.push(<Component08/>);
+    componentArray.push(<Component07/>); // warning
+    componentArray.push(<Component08/>); // warning
     componentArray.push(<Component09/>);
+    componentArray.push(<Component10/>);
 
     return (
       <div>
