@@ -16,11 +16,20 @@ class StateExample extends React.Component {
   handleData () {
     const data = 'new data';
     const {formData} = this.state;
+    console.log("formData", formData);
 
-    this.setState({
-      loading : false,
-      formData : data + formData,
-    });
+    // this.setState({
+    //   loading : false,
+    //   formData : data + formData,
+    // });
+
+    this.setState(function(prevState) {
+      const newState = {
+        loading : false,
+        formData : data + "(" + prevState.formData + ")",
+      }
+      return newState;
+    })
 
     console.log('loading값', this.state.loading);
   }

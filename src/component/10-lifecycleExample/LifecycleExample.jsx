@@ -25,9 +25,15 @@ class LifecycleExample extends React.Component {
     console.log('componentWillUnmount 호출')
   }
 
+  shouldComponentUpdate() {
+    console.log('shouldComponentUpdate 호출');
+    // return true;
+    return false;
+  }
+
   getSnapshotBeforeUpdate() {
-    console.log('shouldComponentupdate 호출');
-    return true;
+    console.log('getSnapshotBeforeUpdate 호출');
+    return {};
   }
 
   render() {
