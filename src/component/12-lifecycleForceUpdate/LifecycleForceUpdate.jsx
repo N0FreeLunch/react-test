@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class LifecycleExample extends React.Component {
+class LifecycleForceUpdate extends React.Component {
   static getDerivedStateFromProps() {
     console.log('getDerivedStateFromProps 호출')
     return {};
@@ -15,6 +15,9 @@ class LifecycleExample extends React.Component {
 
   componentDidMount() {
     console.log('componentDidMount 호출');
+    setTimeout(() => {
+      this.forceUpdate();
+    }, 1000);
   }
 
   componentDidUpdate() {
@@ -27,7 +30,6 @@ class LifecycleExample extends React.Component {
 
   shouldComponentUpdate() {
     console.log('shouldComponentUpdate 호출');
-    // return true;
     return false;
   }
 
@@ -44,4 +46,4 @@ class LifecycleExample extends React.Component {
 }
 
 
-export default LifecycleExample;
+export default LifecycleForceUpdate;
