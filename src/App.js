@@ -12,6 +12,7 @@ import Component10 from './component/10-lifecycleStateUpdate/Index';
 import Component11 from './component/11-shouldComponentUpdate/Index';
 import Component12 from './component/12-lifecycleForceUpdate/Index';
 import Component13 from './component/13-lifecycleDestroyComponent/Index';
+import Component14 from './component/14-getDerivedStateFromProps/Index';
 
 class App extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class App extends React.Component {
     // componentArray.push(<Component11/>);
     // componentArray.push(<Component12/>);
     componentArray.push(<Component13/>);
+    componentArray.push(<Component14/>);
 
     return (
       <div>

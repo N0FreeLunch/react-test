@@ -7,7 +7,9 @@ class Index extends React.Component {
     this.state = {hasDestroyed : false};
   }
   componentDidMount() {
-    this.setState({hasDestroyed : true});
+    setTimeout(() => {
+      this.setState({hasDestroyed : true});
+    }, 1000);
   }
   render() {
     return (
