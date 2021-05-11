@@ -13,6 +13,8 @@ import Component11 from './component/11-shouldComponentUpdate/Index';
 import Component12 from './component/12-lifecycleForceUpdate/Index';
 import Component13 from './component/13-lifecycleDestroyComponent/Index';
 import Component14 from './component/14-getDerivedStateFromProps/Index';
+import Component15 from './component/15-shallowEqual/Index';
+import Component16 from './component/16/Index';
 
 class App extends React.Component {
   render() {
@@ -31,6 +33,8 @@ class App extends React.Component {
     // componentArray.push(<Component12/>);
     componentArray.push(<Component13/>);
     componentArray.push(<Component14/>);
+    componentArray.push(<Component15/>);
+    componentArray.push(<Component16/>);
 
     return (
       <div>
@@ -47,5 +51,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;
