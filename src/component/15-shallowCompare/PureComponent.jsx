@@ -17,7 +17,6 @@ class PureComponent extends React.Component {
     console.log("shallow compare : ", shallowCompare(mylist, list1));
     console.log("shallow compare : ", shallowCompare(list1, list2));
     console.log("---------------PureComponent-end---------------");
-
   }
 
   render () {

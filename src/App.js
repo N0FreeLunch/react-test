@@ -13,8 +13,8 @@ import Component11 from './component/11-shouldComponentUpdate/Index';
 import Component12 from './component/12-lifecycleForceUpdate/Index';
 import Component13 from './component/13-lifecycleDestroyComponent/Index';
 import Component14 from './component/14-getDerivedStateFromProps/Index';
-import Component15 from './component/15-shallowEqual/Index';
-import Component16 from './component/16/Index';
+import Component15 from './component/15-shallowCompare/Index';
+import Component16 from './component/16-extendsPureComponent/Index';
 
 class App extends React.Component {
   render() {
