@@ -15,6 +15,8 @@ import Component13 from './component/13-lifecycleDestroyComponent/Index';
 import Component14 from './component/14-getDerivedStateFromProps/Index';
 import Component15 from './component/15-shallowCompare/Index';
 import Component16 from './component/16-extendsPureComponent/Index';
+import Component17 from './component/17-statelessFunctionComponent/Index';
+import Component18 from './component/18-compareClassFunctionComponent/Index';
 
 class App extends React.Component {
   render() {
@@ -35,6 +37,8 @@ class App extends React.Component {
     componentArray.push(<Component14/>);
     componentArray.push(<Component15/>);
     componentArray.push(<Component16/>);
+    componentArray.push(<Component17/>);
+    componentArray.push(<Component18/>);
 
     return (
       <div>

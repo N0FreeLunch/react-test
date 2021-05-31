@@ -8,3 +8,4 @@ class MyPureComponent extends React.PureComponent {
     return (<div></div>);
   }
 }
+export default MyPureComponent;

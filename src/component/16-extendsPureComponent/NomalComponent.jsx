@@ -8,3 +8,4 @@ class MyComponent extends React.Component {
     return (<div></div>);
   }
 }
+export default MyComponent;
